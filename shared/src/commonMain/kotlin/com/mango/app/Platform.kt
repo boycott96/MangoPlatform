@@ -1,4 +1,4 @@
-package com.mango.mangoplatform
+package com.mango.app
 
 interface Platform {
     val name: String

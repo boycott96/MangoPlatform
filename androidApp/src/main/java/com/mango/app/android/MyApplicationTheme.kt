@@ -1,4 +1,4 @@
-package com.mango.mangoplatform.android
+package com.mango.app.android
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape

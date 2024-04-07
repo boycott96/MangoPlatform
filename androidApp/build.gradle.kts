@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mango.mangoplatform.android"
+    namespace = "com.mango.app.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.mango.mangoplatform.android"
-        minSdk = 21
+        applicationId = "com.mango.app.android"
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

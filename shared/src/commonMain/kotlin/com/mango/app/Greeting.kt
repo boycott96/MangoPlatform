@@ -1,4 +1,4 @@
-package com.mango.mangoplatform
+package com.mango.app
 
 class Greeting {
     private val platform: Platform = getPlatform()

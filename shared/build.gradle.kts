@@ -34,10 +34,10 @@ kotlin {
 }
 
 android {
-    namespace = "com.mango.mangoplatform"
+    namespace = "com.mango.app"
     compileSdk = 34
     defaultConfig {
-        minSdk = 21
+        minSdk = 24
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

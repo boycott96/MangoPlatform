@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MangoPlatform"
+rootProject.name = "MangoApp"
 include(":androidApp")
 include(":shared")
