@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    kotlin("plugin.serialization") version "1.9.10"
 }
 
 kotlin {
@@ -23,10 +24,27 @@ kotlin {
         }
     }
 
+    val ktorVersion = "2.3.2"
+
     sourceSets {
         commonMain.dependencies {
             //put your multiplatform dependencies here
+            implementation(libs.kotlinx.datetime)
+            implementation(libs.androidx.media3.common)
+            implementation(libs.kotlinx.coroutines.core)
+            implementation("io.ktor:ktor-client-core:$ktorVersion")
+            implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+            implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+
         }
+        androidMain.dependencies {
+            implementation("io.ktor:ktor-client-android:$ktorVersion")
+        }
+
+        iosMain.dependencies {
+            implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+        }
+
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
